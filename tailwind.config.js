@@ -37,6 +37,7 @@ module.exports = {
         },
       },
       backgroundImage: ({ theme }) => ({
+        "ryan": "url('/bg-ryan-1.png')",
         "vc-border-gradient": `radial-gradient(at left top, ${theme(
           "colors.gray.500",
         )}, 50px, ${theme("colors.gray.800")} 50%)`,

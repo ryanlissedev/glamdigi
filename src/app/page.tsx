@@ -5,9 +5,11 @@ export default function Home() {
 
   return (
     <section>
-    <DarkModeButton />
-  <h1 className="p-8 text-5xl font-black text-center animate-[slide-down-fade_1.5s_ease-in-out]">Home</h1>
-  
-  </section>
-  )
+      <h1 className="animate-[slide-down-fade_1.5s_ease-in-out] p-8 text-center text-5xl  font-bsmnt uppercase">
+        Home
+      </h1>
+      
+      <DarkModeButton />
+    </section>
+  );
 }

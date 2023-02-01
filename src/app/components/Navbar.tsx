@@ -25,13 +25,13 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   return (
-    <header className="fixed top-0 z-50 w-full px-4 mx-auto shadow bg-zinc-100 dark:border-b dark:border-zinc-600 dark:bg-gray-1100 sm:px-10">
+    <header className="fixed top-0 z-50 mx-auto w-full bg-zinc-100 px-4 shadow dark:border-b dark:border-zinc-600 dark:bg-gray-1100 sm:px-10">
       <div className="justify-between md:flex md:items-center">
         <div>
           {/* This is the Logo block */}
           <div className="flex items-center justify-between py-3 ">
             <div className="md:block md:py-5">
-              <h2 className="text-lg uppercase font-bsmnt">Ryan Lisse</h2>
+              <h2 className="font-bsmnt text-lg uppercase">Ryan Lisse</h2>
             </div>
             <div className="md:hidden">
               <button onClick={() => setNavbar(!navbar)}>
@@ -62,7 +62,7 @@ const Navbar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="block space-y-0 cursor-pointer text-zinc-800 hover:bg-zinc-200 dark:text-slate-50 dark:hover:bg-zinc-700 md:space-y-6 lg:inline-block"
+                    className="block cursor-pointer space-y-0 text-zinc-800 hover:bg-zinc-200 dark:text-slate-50 dark:hover:bg-zinc-700 md:space-y-6 lg:inline-block"
                   >
                     {item.label}
                   </Link>

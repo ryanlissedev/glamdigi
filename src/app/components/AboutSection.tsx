@@ -1,6 +1,7 @@
 "use client";
-import Marquee from "react-fast-marquee";
+
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 const skills = [
   { skill: "HTML" },
@@ -11,6 +12,7 @@ const skills = [
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
   { skill: "Git" },
+  { skill: "Headless CMS" },
   { skill: "GitHub" },
   { skill: "GraphQL" },
   { skill: "Prisma" },
@@ -23,9 +25,9 @@ const AboutSection = () => {
   return (
     <section id="about">
       <div className="pb-12 my-12 md:pt-16 md:pb-48">
-        <h1 className="text-4xl font-bold text-center">
+        <h1 className="text-4xl text-center uppercase font-bsmnt">
           About Me
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+          <hr className="w-6 h-1 mx-auto my-4 border-0 rounded bg-tia-maria-500"></hr>
         </h1>
 
         <div className="flex flex-col items-stretch justify-center space-y-10 align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
@@ -35,16 +37,16 @@ const AboutSection = () => {
             </h1>
             <p>
               Hi, my name is Ryan and I am a{" "}
-              <span className="font-bold">{"highly skilled"}</span>,{" "}
+              <span className="font-bold ">{"highly skilled"}</span>,{" "}
               <span className="font-bold">{"passionate"}</span>, and{" "}
               <span className="font-bold">{"driven"}</span> Technology Advisor
               and Product Developer based in Almere, the Netherlands.
             </p>
             <br />
             <p>
-              My passion for music, creativity, and technology has been a
-              driving force in my career for the past 25 years, during which I
-              have been in the music and entertainment industry.💻
+              Fueled by 25 years of passion for music, creativity, and
+              technology, I bring a unique perspective to my work, allowing me
+              to create impactful solutions and build meaningful connections.💻
             </p>
             <br />
             <p>
@@ -56,10 +58,11 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I am also a proud father of two kids and a dog 🐶, and am
-              passionate about the web3 space. I believe that the web3 ecosystem
-              has the potential to create a future where creators have all the
-              tools they need to build, grow and monetize their communities.
+              Aside from my tech-savvy side, I'm a proud father of two kids and
+              a dog 🐕, born and raised in Amsterdam with roots from Suriname
+              🇸🇷. I believe in the importance of community, and I'm always
+              looking for new ways to bring people together and make a positive
+              impact..🤓
             </p>
             <br />
             <p>
@@ -82,12 +85,53 @@ const AboutSection = () => {
               gradient={false}
               className="font-inter "
             >
-              <div className="z-10 flex flex-row flex-wrap justify-center md:justify-start">
-                {skills.map((item, idx) => {
+              <div className="flex flex-row flex-wrap justify-center md:justify-start">
+                {skills.slice(0, 6).map((item, idx) => {
                   return (
                     <p
                       key={idx}
-                      className="px-4 py-2 mt-2 mr-2 font-semibold text-gray-500 bg-gray-200 rounded"
+                      className="px-4 py-2 mt-2 mr-2 transition-all duration-75 ease-in bg-gray-900 rounded-md group-hover:bg-opacity- text-tia-maria-500"
+                    >
+                      {item.skill}
+                    </p>
+                  );
+                })}
+              </div>
+            </Marquee>
+            <br />
+            <Marquee
+              pauseOnHover={true}
+              gradient={false}
+              className="font-inter "
+              direction="right"
+              speed={35}
+            >
+              <div className="flex flex-row flex-wrap justify-center md:justify-start">
+                {skills.slice(4, 9).map((item, idx) => {
+                  return (
+                    <p
+                      key={idx}
+                      className="relative px-4 py-2 mt-2 mr-2 transition-all duration-75 ease-in bg-gray-900 rounded-md text-tia-maria-500 group-hover:bg-opacity-0"
+                    >
+                      {item.skill}
+                    </p>
+                  );
+                })}
+              </div>
+            </Marquee>
+            <br />
+            <Marquee
+              pauseOnHover={true}
+              gradient={false}
+              className="font-inter "
+              speed={15}
+            >
+              <div className="flex flex-row flex-wrap justify-center md:justify-start">
+                {skills.slice(7).map((item, idx) => {
+                  return (
+                    <p
+                      key={idx}
+                      className="px-4 py-2 mt-2 mr-2 transition-all duration-75 ease-in bg-gray-900 rounded-md group-hover:bg-opacity- text-tia-maria-500"
                     >
                       {item.skill}
                     </p>

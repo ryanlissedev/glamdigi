@@ -19,7 +19,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-2/3">
-          <h1 className="mt-6 text-4xl font-bold md:mt-0 md:text-7xl">
+          <h1 className="mt-6 text-4xl uppercase font-bsmnt md:mt-0 md:text-6xl">
             Design with purpose
           </h1>
           <p className="mt-4 mb-16 text-lg md:text-2xl">

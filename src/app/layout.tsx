@@ -32,7 +32,7 @@ export default function RootLayout({
       className={cx(manrope.variable, inter.variable, bsmnt.variable)}
     >
       <Providers>
-        <body className="bg-zinc-200 bg-[url('/grid-2.svg')] text-zinc-800 transition-all duration-500 dark:bg-gray-1100 dark:text-slate-50 ">
+        <body className="container mx-auto bg-zinc-200 bg-[url('/grid-2.svg')] text-zinc-800 transition-all duration-500 dark:bg-gray-1100 dark:text-slate-50 ">
           <Navbar /> {children}
         </body>
       </Providers>

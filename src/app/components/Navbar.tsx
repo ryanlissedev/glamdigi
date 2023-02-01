@@ -25,7 +25,7 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   return (
-    <header className="top-0 w-full px-4 mx-auto shadow bg-zinc-200 dark:border-b dark:border-zinc-600 dark:bg-gray-1100 sm:px-10">
+    <header className="sticky top-0 z-50 w-full px-4 mx-auto rounded shadow bg-zinc-200 dark:border-b dark:border-zinc-600 dark:bg-gray-1100 sm:px-10">
       <div className="justify-between md:flex md:items-center">
         <div>
           {/* This is the Logo block */}

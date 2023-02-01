@@ -5,12 +5,6 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
   darkMode: "class",
   content: [
-    // Components
-    "./components/**/*.{js,ts,jsx,tsx}",
-
-    // Pages
-    "./pages/**/*.{js,ts,jsx,tsx}",
-
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -35,6 +29,27 @@ module.exports = {
           orange: "#F5A623",
           violet: "#7928CA",
         },
+        'spotify-green': '#1DB954',
+        'apple-black': '#333333',
+        'amazon-orange': '#FF9900',
+        'tia-maria': {
+            '50': '#fff8ed',
+            '100': '#ffefd5',
+            '200': '#fedcaa',
+            '300': '#fdc274',
+            '400': '#fb9d3c',
+            '500': '#f98016',
+            '600': '#ea650c',
+            '700': '#c14b0c',
+            '800': '#9a3c12',
+            '900': '#7c3312',
+        },
+      },
+      boxShadow: {
+        neu1: '-5px -5px 15px 2px rgb(0 0 0 / 0.1)',
+        neu2: '-5px -5px 10px 2px rgb(0.9 0.9 0.9 / 0.1)',
+        innerneu1: 'inset -5px -5px 10px 2px rgb(0.9 0.9 0.9 / 1)',
+        innerneu2: 'inset -5px -5px 15px 2px rgb(0 0 0 / 0.1)'
       },
       backgroundImage: ({ theme }) => ({
         "ryan": "url('/bg-ryan-1.png')",

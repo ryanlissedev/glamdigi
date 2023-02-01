@@ -9,7 +9,7 @@ const Providers = ({
   children: React.ReactNode
 }) => {
   return (
-    <ThemeProvider attribute="class">{children}</ThemeProvider>
+    <ThemeProvider attribute="class" enableSystem={true}>{children}</ThemeProvider>
   )
 }
 

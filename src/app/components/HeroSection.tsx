@@ -1,6 +1,6 @@
 "use client"; // this is a client component
 
-import BackgroundCircles from "./BackgrandCircles";
+import BackgroundCircles from "./BackgroundCircles";
 import { HiArrowDown } from "react-icons/hi";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";

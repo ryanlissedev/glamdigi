@@ -1,11 +1,10 @@
-import DarkModeButton from "./components/DarkModeButton";
-import Image from "next/image";
-
-import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
-import ProjectSection from "./components/ProjectSection";
+import DarkModeButton from "./components/DarkModeButton";
 import Footer from "./components/Footer";
+import HeroSection from "./components/HeroSection";
 import HeroSection2 from "./components/HeroSection2";
+import Image from "next/image";
+import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
   return (

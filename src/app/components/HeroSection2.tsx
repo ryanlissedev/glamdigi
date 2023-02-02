@@ -1,15 +1,16 @@
 "use client";
-import { useTypewriter } from "react-simple-typewriter";
 
-import Image from "next/image";
-import BackgroundCircles from "./BackgrandCircles";
-import { Link } from "react-scroll";
 import {
   AiOutlineGithub,
-  AiOutlineTwitter,
   AiOutlineLinkedin,
+  AiOutlineTwitter,
   AiOutlineYoutube,
 } from "react-icons/ai";
+
+import BackgroundCircles from "./BackgroundCircles";
+import Image from "next/image";
+import { Link } from "react-scroll";
+import { useTypewriter } from "react-simple-typewriter";
 
 type Props = {};
 

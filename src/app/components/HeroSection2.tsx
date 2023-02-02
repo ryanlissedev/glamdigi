@@ -1,5 +1,5 @@
 "use client";
-import { cursor, useTypewriter } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 
 import Image from "next/image";
 import BackgroundCircles from "./BackgrandCircles";
@@ -14,7 +14,7 @@ import {
 type Props = {};
 
 function HeroSection2({}: Props) {
-  const [text, count] = useTypewriter({
+  const [text, helper] = useTypewriter({
     words: [
       "Technology Consultant",
       " Full Stack Creative",
@@ -32,6 +32,7 @@ function HeroSection2({}: Props) {
     loop: true,
     delaySpeed: 2500,
   });
+  const { isType, isDelete, isDelay, isDone } = helper;
   return (
     <section id="home">
       <div className="flex flex-col items-center justify-center h-screen align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">

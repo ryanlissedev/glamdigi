@@ -9,19 +9,16 @@ import ProjectSection from "./components/ProjectSection";
 export default function Home() {
   return (
     <main className="z-0 h-screen max-w-3xl px-4 mx-auto overflow-scroll snap-y snap-mandatory sm:px-6 md:max-w-7xl">
-      <section
-        id="hero"
-        className="flex items-center justify-between snap-center"
-      >
+      <section id="hero" className="flex items-center justify-between ">
         <HeroSection2 />
       </section>
-      <section id="about" className="flex snap-center">
+      <section id="about" className="flex snap-normal">
         <AboutSection />
       </section>
-      <section id="projects" className="flex snap-center">
+      <section id="projects" className="flex ">
         <ProjectSection />
       </section>
-      <section id="footer" className="flex snap-center">
+      <section id="footer" className="flex ">
         <Footer />
       </section>
     </main>

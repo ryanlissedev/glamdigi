@@ -11,6 +11,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { useTypewriter } from "react-simple-typewriter";
+import Marke from "./Marke";
 
 type Props = {};
 
@@ -22,13 +23,13 @@ function HeroSection2({}: Props) {
       " Product Designer",
       " UI/UX Designer",
       " Frontend Developer",
-      " Backend Developer",
+      " DAD",
       " Blockchain Developer",
       " Web3 Developer",
       " Solidity Developer",
-      " Smart Contract Developer",
+      " Music Producer",
       " NFT Developer",
-      " Crypto Developer",
+      " Polygon Guild Leader",
     ],
     loop: true,
     delaySpeed: 2500,
@@ -36,6 +37,7 @@ function HeroSection2({}: Props) {
   const { isType, isDelete, isDelay, isDone } = helper;
   return (
     <section id="home">
+      {/*  <Marke />  */}
       <div className="flex flex-col items-center justify-center h-screen align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
         <div className="items-center justify-center px-8">
           <BackgroundCircles />
@@ -46,7 +48,7 @@ function HeroSection2({}: Props) {
             height={250}
             className="items-center justify-center rounded-full shadow-2xl"
           />
-          <div className="flex flex-row items-center justify-center mt-4 space-x-2 ">
+          <div className="flex flex-row items-center justify-center gap-2 mt-4 space-x-4 ">
             <a
               href="https://github.com/ryanlisse"
               rel="noreferrer"
@@ -104,7 +106,7 @@ function HeroSection2({}: Props) {
               transforming Ideas into Stunning & User-Friendly Web3 Experiences.
             </p>
           </p>
-          <Link
+          {/* <Link
             className="font-semi-bold group relative  mr-2 mb-24 inline-flex items-center justify-center overflow-hidden rounded-lg bg-gray-1000 bg-gradient-to-br from-pink-500 to-orange-400 p-0.5 text-xl text-gray-900 hover:text-zinc-800 focus:outline-none focus:ring-4 focus:ring-pink-200 group-hover:from-pink-500 group-hover:to-orange-400 dark:text-zinc-200 dark:focus:ring-pink-800"
             to="projects"
             activeClass="active"
@@ -116,7 +118,7 @@ function HeroSection2({}: Props) {
             <span className="relative  rounded-md bg-gray-900  px-5 py-2.5 text-zinc-200 transition-all duration-75 ease-in group-hover:bg-opacity-0">
               Projects
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

@@ -26,72 +26,16 @@ const Navbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   return (
-    <header className="container sticky top-0 z-50 w-full px-4 mx-auto shadow rounded-xl bg-zinc-200 bg-opacity-30 backdrop-blur-lg backdrop-filter dark:border-b dark:border-zinc-600 dark:bg-gray-1100 dark:bg-opacity-25 dark:backdrop-blur-lg dark:backdrop-filter sm:px-10">
-      <div className="justify-between md:flex md:items-center">
+    <header className=" sticky top-0 z-50 mx-auto w-full  bg-gray-1100  px-4 shadow backdrop-blur-lg backdrop-filter dark:border-b dark:border-zinc-600 dark:bg-opacity-25 dark:backdrop-blur-lg dark:backdrop-filter sm:px-10">
+      <div className="flex items-center justify-center">
         <div>
           {/* This is the Logo block */}
-          <div className="flex items-center justify-between py-3 ">
-            <div className="md:block md:py-5">
-              <h2 className="text-lg uppercase font-bsmnt">Ryan Lisse</h2>
+          <div className="flex items-center py-2 ">
+            <div className="md:block md:py-3">
+              <h2 className="text-center font-bsmnt text-3xl uppercase text-[#F9D8DD]">
+                Glamdigi
+              </h2>
             </div>
-            <div className="md:hidden">
-              <button onClick={() => setNavbar(!navbar)}>
-                {navbar ? (
-                  <IoMdClose className="text-2xl" />
-                ) : (
-                  <IoMdMenu className="text-2xl" />
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${
-              navbar ? "block" : "hidden"
-            }`}
-          >
-            {/* This is the Nav block */}
-            <motion.div
-              initial={{
-                opacity: 0,
-                x: 500,
-                scale: 0.5,
-              }}
-              animate={{
-                opacity: 1,
-                x: 0,
-                scale: 1,
-              }}
-              className="items-center justify-center md:flex md:space-x-6"
-            >
-              {/* Nav Items map thru the nav items*/}
-              {NAV_ITEMS.map((item, idx) => {
-                return (
-                  <Link
-                    key={idx}
-                    to={item.page}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    className="block space-y-0 cursor-pointer text-zinc-800 hover:bg-zinc-200 dark:text-slate-50 dark:hover:bg-zinc-700 md:space-y-6 lg:inline-block"
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-              {/* Dark Mode Button */}
-              {currentTheme === "dark" ? (
-                <button onClick={() => setTheme("light")}>
-                  <RiSunLine className=" rounded-xl bg-zinc-800" />
-                </button>
-              ) : (
-                <button onClick={() => setTheme("dark")}>
-                  <RiMoonFill className=" rounded-xl hover:bg-zinc-200" />
-                </button>
-              )}
-            </motion.div>
           </div>
         </div>
       </div>

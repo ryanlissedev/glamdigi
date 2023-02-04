@@ -11,9 +11,14 @@ const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
 });
+const futur = localFont({
+  src: "./futura-pt-cond-bold.otf",
+  weight: "800",
+  variable: "--font-futur",
+});
 const bsmnt = localFont({
   src: "./BasementGrotesque-Black_v1.202.otf",
-  weight: "800",
+  weight: "900",
   variable: "--font-bsmnt",
 });
 
@@ -29,10 +34,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cx(manrope.variable, inter.variable, bsmnt.variable)}
+      className={cx(
+        manrope.variable,
+        inter.variable,
+        futur.variable,
+        bsmnt.variable,
+      )}
     >
       <Providers>
-        <body className=" bg-zinc-200 bg-[url('/grid-2.svg')] text-zinc-800 transition-all duration-500 dark:bg-gray-1100 dark:text-slate-50 ">
+        <body className=" bg-[#F9D8DD] bg-[url('/grid-2.svg')] text-zinc-800 transition-all duration-500 dark:bg-gray-1100 dark:text-slate-50 ">
           <Navbar /> {children}
         </body>
       </Providers>

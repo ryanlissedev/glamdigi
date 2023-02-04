@@ -4,7 +4,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import { HiArrowDown } from "react-icons/hi";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
-import Marke from "./Marke";
+import Marke from "./LogoMarquee";
 import React from "react";
 
 const HeroSection = () => {

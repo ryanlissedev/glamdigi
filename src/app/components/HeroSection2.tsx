@@ -2,13 +2,13 @@ import React from "react";
 
 function HeroSection2() {
   return (
-    <div className="mt-4 flex min-h-[70vh] flex-row rounded-3xl bg-gray-1000">
+    <div className="mt-4 flex min-h-[70vh] flex-row rounded-3xl bg-gray-1000 dark:bg-[#e476b2]">
       <div className="w-2/3">
-        <div className=" p-8  text-[#F9D8DD]">
+        <div className=" p-8 text-[#F9D8DD] dark:text-gray-900">
           <h1 className="text-center font-futur text-[13rem] font-extrabold uppercase leading-[0.8]">
             creative <br /> Agency
           </h1>
-          <div className="w-auto- mt-20 text-left text-2xl">
+          <div className="w-auto- mt-20 text-left text-2xl font-medium dark:text-zinc-100">
             <p className="">
               Ons team van creators en strategen helpt merken met bereiken van
               Gen Z.
@@ -21,7 +21,7 @@ function HeroSection2() {
           {/* create a contact button with a white outline rounded */}
           <button
             type="button"
-            className="mb-2 mt-4 w-2/5 rounded-full border-4 border-gray-300 px-5 py-2.5  text-lg font-extrabold "
+            className="mb-2 mt-4 w-2/5 rounded-full border-4 border-gray-300 px-5 py-2.5  text-lg font-extrabold dark:text-zinc-100 "
           >
             Contact
           </button>

@@ -17,12 +17,6 @@ export default function Home() {
       <section id="about" className="flex snap-normal">
         <AboutSection />
       </section>
-      <section id="projects" className="flex ">
-        <ProjectSection />
-      </section>
-      <section id="footer" className="flex ">
-        <Footer />
-      </section>
     </main>
   );
 }

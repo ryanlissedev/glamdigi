@@ -8,7 +8,7 @@ const LogoMarquee = () => {
       <Marquee
         pauseOnHover={true}
         gradient={false}
-        className="mt-4 rounded-3xl bg-zinc-100 "
+        className="mt-4 rounded-3xl bg-zinc-100 dark:text-gray-900"
       >
         <p className="gap-4 font-bsmnt">Logo 1</p>
         <p className="p-8 font-bsmnt">Logo 2</p>

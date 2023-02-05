@@ -3,6 +3,7 @@
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 
+import DarkModeButton from "./DarkModeButton";
 import { Link } from "react-scroll/modules";
 import React from "react";
 import { motion } from "framer-motion";
@@ -32,12 +33,13 @@ const Navbar = () => {
           {/* This is the Logo block */}
           <div className="flex items-center py-2 ">
             <div className="md:block md:py-3">
-              <h2 className="text-center font-bsmnt text-3xl uppercase text-[#F9D8DD]">
+              <h2 className="text-center font-bsmnt text-3xl uppercase text-[#F9D8DD] ">
                 Glamdigi
               </h2>
             </div>
           </div>
         </div>
+        <DarkModeButton />
       </div>
     </header>
   );

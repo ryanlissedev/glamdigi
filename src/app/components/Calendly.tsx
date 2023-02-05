@@ -13,7 +13,7 @@ export const Calendly = () => {
           styles={{
             height: "800px",
           }}
-          url="https://calendly.com/glamdiginl/30min"
+          url="https://calendly.com/glamdigi/30min"
         />
       </div>
       <div></div>

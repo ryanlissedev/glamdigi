@@ -5,7 +5,7 @@ const AboutSection = () => {
     <div className="flex flex-col md:flex-row">
       <section
         id="aboutus"
-        className="mb-6 flex  overflow-hidden rounded-3xl bg-gray-1000 p-4 text-[#F9D8DD] dark:bg-[#073763] dark:text-zinc-100 md:mr-6 md:flex-col"
+        className="mb-6 flex overflow-hidden rounded-3xl bg-gray-1000 p-4 font-semibold text-[#F9D8DD] dark:bg-[#d8b699] dark:text-zinc-100 md:mr-6 md:flex-col"
       >
         <div className="mx-auto flex items-center justify-center">
           <div className="relative mx-auto px-4 sm:static sm:px-6 lg:px-8">

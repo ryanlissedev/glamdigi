@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import { Calendly } from "./components/Calendly";
+import CallBanner from "./components/CallBanner";
 import Footer from "./components/Footer";
 import HeroSection2 from "./components/HeroSection2";
 import LogoMarquee from "./components/LogoMarquee";
@@ -12,6 +13,7 @@ export default function Home() {
       <LogoMarquee />
       <ServicesSection />
       <AboutSection />
+      <CallBanner />
       <Calendly />
       <Footer />
     </main>

@@ -1,9 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
 export default function Hero2() {
   return (
-    <div className="relative mt-4 max-w-[90rem]  overflow-hidden  rounded-3xl bg-gray-1000 text-[#F9D8DD] dark:bg-[#e476b2] dark:text-gray-900">
+    <div className="relative overflow-hidden rounded-3xl bg-gray-1000 text-[#F9D8DD] dark:bg-[#e476b2] dark:text-gray-900">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-        <div className="relative mx-auto px-4 sm:static sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
           <div className="sm:max-w-lg">
             <h1 className=" font-futur text-[12.3rem] uppercase leading-[0.8] tracking-tight text-[#F9D8DD] dark:text-gray-900">
               creative <br /> Agency

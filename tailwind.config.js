@@ -132,10 +132,7 @@ module.exports = {
       require("@tailwindcss/forms"),
       require("@tailwindcss/typography"),
       require("@tailwindcss/line-clamp"),
-      plugin(({ addVariant }) => {
-        addVariant("radix-side-top", '&[data-side="top"]');
-        addVariant("radix-side-bottom", '&[data-side="bottom"]');
-      }),
+      require("@tailwindcss/aspect-ratio"),
     ],
   },
 };

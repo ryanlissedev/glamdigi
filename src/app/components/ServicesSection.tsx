@@ -5,7 +5,7 @@ const ServicesSection = () => {
   return (
     <section id="services">
       <div className=" pb-12 md:pt-16 ">
-        <h1 className="font-inter text-6xl font-black uppercase text-gray-900 dark:text-zinc-200">
+        <h1 className="font-inter mt-4 text-6xl font-black uppercase text-gray-900 dark:text-zinc-200">
           Diensten
           <hr className="bg-pink mx-auto my-4 h-1 w-6 rounded border-0"></hr>
         </h1>

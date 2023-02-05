@@ -11,7 +11,7 @@ import ServicesSection from "./components/ServicesSection";
 
 export default function Home() {
   return (
-    <main className="z-0 mx-auto h-screen  snap-y  snap-mandatory px-4 sm:px-6 md:max-w-7xl">
+    <main className="container z-0 mx-auto  h-screen items-center justify-center">
       <HeroSection2 />
 
       <LogoMarquee />
@@ -19,6 +19,7 @@ export default function Home() {
       <ServicesSection />
 
       <AboutSection />
+      <Footer />
     </main>
   );
 }

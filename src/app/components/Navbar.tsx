@@ -39,7 +39,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <DarkModeButton />
       </div>
     </header>
   );

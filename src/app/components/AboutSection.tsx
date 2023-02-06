@@ -13,13 +13,13 @@ const AboutSection = () => {
               <h1 className="font-inter my-10 items-center justify-center text-7xl font-black uppercase leading-[0.8] tracking-tight text-[#F9D8DD] dark:text-zinc-200">
                 Over ons
               </h1>
-              <p className="mt-6 w-8/12 text-xl text-zinc-200">
+              <p className="mt-6 w-9/12 text-xl text-zinc-200">
                 GLAMDIGI is de Creative marketing agency die de nieuwe generatie
-                begrijpt en bereikt. Op ons kantoor aan het Vondelpark in
-                Amsterdam werken 45 creatieven en (online) marketing
-                specialisten voor toffe merken als Mysteryland, GOGO en
-                Instabox. We creëren (én adverteren) TikTok-first content die
-                jou helpt Gen Z te bereiken.
+                begrijpt en bereikt. <br /> Herkenbaar? Het runnen van een is
+                zwaar werk, klanten behandelen, telefoontjes tussendoor,
+                administratie bijhouden en ook nog producten inkopen. Hoe graag
+                je het ook zou willen, zelf de marketing doen gaat gewoon niet.
+                Hier wil je vanaf
               </p>
             </div>
             <button
